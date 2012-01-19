@@ -35,6 +35,67 @@
 		
 		CGSize size = [[CCDirector sharedDirector] winSize];
         
+        CCSprite* bg = [CCSprite spriteWithFile:@"background12.jpg"];
+        bg.position = ccp(size.width/2, size.height/2);
+        [self addChild:bg z:0];
+
+        CCSprite* bgh = [CCSprite spriteWithFile:@"Holm.png"];
+        bgh.position = ccp(131 + size.width/2, size.height/2 - 138);
+        [self addChild:bgh z:10];
+
+        CCSprite* tx = [CCSprite spriteWithFile:@"text.png"];
+        tx.position = ccp(790, 690);
+        [self addChild:tx z:20];
+
+        CCSprite* house = [CCSprite spriteWithFile:@"Lisa_v_Dome_00000.png"];
+		house.position = ccp(840, 360);
+		[self addChild:house z:5];
+		
+		CCAnimation* anim1 = [CCAnimation animation];
+        anim1.delay = 0.09f;
+        for( int j = 0; j <= 16; j++) {
+            NSString* s = [NSString stringWithFormat:@"Lisa_v_Dome_%05d.png", j];
+//            NSLog(@"s = %@", s);
+            [anim1 addFrameWithFilename:s];
+        }
+        
+        [house runAction: [CCRepeatForever actionWithAction: [CCSequence actions:[CCDelayTime actionWithDuration:3.0f], [CCAnimate actionWithAnimation:anim1 restoreOriginalFrame:NO], nil]]];
+
+        CCSprite* smoke = [CCSprite spriteWithFile:@"12smoke_0000.png"];
+		smoke.position = ccp(810, 630);
+		[self addChild:smoke z:5];
+
+		CCAnimation* anim2 = [CCAnimation animation];
+        anim2.delay = 0.04f;
+        for( int j = 0; j <= 49; j++) {
+            NSString* s = [NSString stringWithFormat:@"12smoke_%04d.png", j];
+//            NSLog(@"s = %@", s);
+            [anim2 addFrameWithFilename:s];
+        }
+
+        [smoke runAction: [CCRepeatForever actionWithAction: [CCAnimate actionWithAnimation:anim2 restoreOriginalFrame:NO]]];
+
+        
+        CCSprite* bull = [CCSprite spriteWithFile:@"bull.png"];
+		bull.position = ccp(360, 340);
+        bull.scale = 0.5f;
+		[self addChild:bull z:5];
+        
+        [bull runAction: [CCRepeatForever actionWithAction: [CCSequence actions:
+                                                             
+                                                             [CCScaleTo actionWithDuration:0.0001f scale:0.5f],
+                                                             [CCScaleTo actionWithDuration:0.1f scale:1.0f],
+                                                             [CCDelayTime actionWithDuration:3.0f],
+                                                             
+                                                             nil]]];
+
+        //		CCMenuItemImage* item1 = [CCMenuItemImage itemFromNormalImage:@"next.png" selectedImage:@"next_activ.png" target:self selector:@selector(pCallback1:)];
+//        
+//		CCMenu* menu = [CCMenu menuWithItems:item1, nil];
+//		menu.position = ccp(0,0);
+//		item1.position = ccp(size.width - 82, 59);	
+//		
+//		[self addChild: menu z:500];
 	}
 	return self;
 }
