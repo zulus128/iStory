@@ -152,6 +152,7 @@
 		F27FB50D14C7E8C600799C7C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F27FB50C14C7E8C600799C7C /* AppDelegate.m */; };
 		F27FB51014C7E8C600799C7C /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F27FB50F14C7E8C600799C7C /* RootViewController.m */; };
 		F27FB51314C7E8C600799C7C /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F27FB51214C7E8C600799C7C /* HelloWorldLayer.m */; };
+		F2F369B814C7F0E300D246ED /* Page12Layer.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F369B714C7F0E300D246ED /* Page12Layer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -419,6 +420,8 @@
 		F27FB50F14C7E8C600799C7C /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		F27FB51114C7E8C600799C7C /* HelloWorldLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
 		F27FB51214C7E8C600799C7C /* HelloWorldLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
+		F2F369B614C7F0E300D246ED /* Page12Layer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Page12Layer.h; sourceTree = "<group>"; };
+		F2F369B714C7F0E300D246ED /* Page12Layer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Page12Layer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -485,6 +488,8 @@
 				F27FB39214C7E8C300799C7C /* Shaders */,
 				F27FB3C914C7E8C300799C7C /* libs */,
 				F27FB50714C7E8C600799C7C /* Supporting Files */,
+				F2F369B614C7F0E300D246ED /* Page12Layer.h */,
+				F2F369B714C7F0E300D246ED /* Page12Layer.m */,
 			);
 			path = iStrory;
 			sourceTree = "<group>";
@@ -1059,6 +1064,7 @@
 				F27FB50D14C7E8C600799C7C /* AppDelegate.m in Sources */,
 				F27FB51014C7E8C600799C7C /* RootViewController.m in Sources */,
 				F27FB51314C7E8C600799C7C /* HelloWorldLayer.m in Sources */,
+				F2F369B814C7F0E300D246ED /* Page12Layer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1156,6 +1162,7 @@
 				F27FB51814C7E8C600799C7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

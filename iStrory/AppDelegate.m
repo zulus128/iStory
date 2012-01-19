@@ -9,8 +9,9 @@
 #import "cocos2d.h"
 
 #import "AppDelegate.h"
-#import "HelloWorldLayer.h"
+//#import "HelloWorldLayer.h"
 #import "RootViewController.h"
+#import "Page12Layer.h"
 
 @implementation AppDelegate
 
@@ -90,7 +91,8 @@
 	[self removeStartupFlicker];
 	
 	// Run the intro Scene
-	[[CCDirector sharedDirector] runWithScene: [HelloWorldLayer scene]];
+//	[[CCDirector sharedDirector] runWithScene: [HelloWorldLayer scene]];
+	[[CCDirector sharedDirector] runWithScene: [Page12Layer scene]];
 }
 
 
