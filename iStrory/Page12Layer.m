@@ -50,8 +50,34 @@
         CCSprite* house = [CCSprite spriteWithFile:@"Lisa_v_Dome_00000.png"];
 		house.position = ccp(840, 360);
 		[self addChild:house z:5];
-		
-		CCAnimation* anim1 = [CCAnimation animation];
+
+        CCSprite* rabbit = [CCSprite spriteWithFile:@"rabbit.png"];
+		rabbit.position = ccp(909, 114);
+		[self addChild:rabbit z:15];
+
+        [rabbit runAction: [CCRepeatForever actionWithAction: [CCSequence actions:
+                                                             
+                                                            [CCFadeTo actionWithDuration:1.8f opacity:0.0f],
+                                                               [CCFadeTo actionWithDuration:0.0001f opacity:255],
+                                                             [CCDelayTime actionWithDuration:3.0f],
+                                                             
+                                                             nil]]];
+                                                                                                                                 
+        CCSprite* rabbit_eyes = [CCSprite spriteWithFile:@"rabbit_eyes.png"];
+		rabbit_eyes.position = ccp(909, 114);
+        rabbit_eyes.opacity = 0;
+		[self addChild:rabbit_eyes z:16];
+
+       [rabbit_eyes runAction: [CCRepeatForever actionWithAction: [CCSequence actions:
+                                                               
+                                                               [CCFadeTo actionWithDuration:1.8f opacity:255.0f],
+                                                                   [CCFadeTo actionWithDuration:0.0001f opacity:0.0f],
+                                                               [CCDelayTime actionWithDuration:3.0f],
+                                                               
+                                                               nil]]];
+
+	
+  CCAnimation* anim1 = [CCAnimation animation];
         anim1.delay = 0.09f;
         for( int j = 0; j <= 16; j++) {
             NSString* s = [NSString stringWithFormat:@"Lisa_v_Dome_%05d.png", j];
@@ -77,14 +103,25 @@
 
         
         CCSprite* bull = [CCSprite spriteWithFile:@"bull.png"];
-		bull.position = ccp(360, 340);
+        float x = 360;
+        float y = 340;
+		bull.position = ccp(x, y);
         bull.scale = 0.5f;
 		[self addChild:bull z:5];
         
         [bull runAction: [CCRepeatForever actionWithAction: [CCSequence actions:
                                                              
                                                              [CCScaleTo actionWithDuration:0.0001f scale:0.5f],
-                                                             [CCScaleTo actionWithDuration:0.1f scale:1.0f],
+                                                             [CCScaleTo actionWithDuration:0.5f scale:1.0f],
+                                                             [CCMoveTo actionWithDuration:0.1f position:ccp(x+10, y+10)],
+                                                             [CCMoveTo actionWithDuration:0.1f position:ccp(x-10, y+10)],
+                                                             [CCMoveTo actionWithDuration:0.1f position:ccp(x+10, y-10)],
+                                                             [CCMoveTo actionWithDuration:0.1f position:ccp(x-10, y-10)],
+                                                             [CCMoveTo actionWithDuration:0.1f position:ccp(x+30, y+30)],
+                                                             [CCMoveTo actionWithDuration:0.1f position:ccp(x-30, y+30)],
+                                                             [CCMoveTo actionWithDuration:0.1f position:ccp(x+30, y-30)],
+                                                             [CCMoveTo actionWithDuration:0.1f position:ccp(x-30, y-30)],
+
                                                              [CCDelayTime actionWithDuration:3.0f],
                                                              
                                                              nil]]];
