@@ -11,7 +11,7 @@
 #import "AppDelegate.h"
 //#import "HelloWorldLayer.h"
 #import "RootViewController.h"
-#import "Page12Layer.h"
+#import "Page13Layer.h"
 
 @implementation AppDelegate
 
@@ -92,7 +92,7 @@
 	
 	// Run the intro Scene
 //	[[CCDirector sharedDirector] runWithScene: [HelloWorldLayer scene]];
-	[[CCDirector sharedDirector] runWithScene: [Page12Layer scene]];
+	[[CCDirector sharedDirector] runWithScene: [Page13Layer scene]];
 }
 
 

@@ -35,23 +35,23 @@
 		
 		CGSize size = [[CCDirector sharedDirector] winSize];
         
-        CCSprite* bg = [CCSprite spriteWithFile:@"background12.jpg"];
+        CCSprite* bg = [CCSprite spriteWithFile:@"12background12.jpg"];
         bg.position = ccp(size.width/2, size.height/2);
         [self addChild:bg z:0];
 
-        CCSprite* bgh = [CCSprite spriteWithFile:@"Holm.png"];
+        CCSprite* bgh = [CCSprite spriteWithFile:@"12Holm.png"];
         bgh.position = ccp(131 + size.width/2, size.height/2 - 138);
         [self addChild:bgh z:10];
 
-        CCSprite* tx = [CCSprite spriteWithFile:@"text.png"];
+        CCSprite* tx = [CCSprite spriteWithFile:@"12text.png"];
         tx.position = ccp(790, 690);
         [self addChild:tx z:20];
 
-        CCSprite* house = [CCSprite spriteWithFile:@"Lisa_v_Dome_00000.png"];
+        CCSprite* house = [CCSprite spriteWithFile:@"12Lisa_v_Dome_00000.png"];
 		house.position = ccp(840, 360);
 		[self addChild:house z:5];
 
-        CCSprite* rabbit = [CCSprite spriteWithFile:@"rabbit.png"];
+        CCSprite* rabbit = [CCSprite spriteWithFile:@"12rabbit.png"];
 		rabbit.position = ccp(909, 114);
 		[self addChild:rabbit z:15];
 
@@ -63,7 +63,7 @@
                                                              
                                                              nil]]];
                                                                                                                                  
-        CCSprite* rabbit_eyes = [CCSprite spriteWithFile:@"rabbit_eyes.png"];
+        CCSprite* rabbit_eyes = [CCSprite spriteWithFile:@"12rabbit_eyes.png"];
 		rabbit_eyes.position = ccp(909, 114);
         rabbit_eyes.opacity = 0;
 		[self addChild:rabbit_eyes z:16];
@@ -80,7 +80,7 @@
   CCAnimation* anim1 = [CCAnimation animation];
         anim1.delay = 0.09f;
         for( int j = 0; j <= 16; j++) {
-            NSString* s = [NSString stringWithFormat:@"Lisa_v_Dome_%05d.png", j];
+            NSString* s = [NSString stringWithFormat:@"12Lisa_v_Dome_%05d.png", j];
 //            NSLog(@"s = %@", s);
             [anim1 addFrameWithFilename:s];
         }
@@ -102,7 +102,7 @@
         [smoke runAction: [CCRepeatForever actionWithAction: [CCAnimate actionWithAnimation:anim2 restoreOriginalFrame:NO]]];
 
         
-        CCSprite* bull = [CCSprite spriteWithFile:@"bull.png"];
+        CCSprite* bull = [CCSprite spriteWithFile:@"12bull.png"];
         float x = 360;
         float y = 340;
 		bull.position = ccp(x, y);
