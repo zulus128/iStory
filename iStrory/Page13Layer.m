@@ -35,10 +35,23 @@
 		
 		CGSize size = [[CCDirector sharedDirector] winSize];
         
+        CCSprite* bg1 = [CCSprite spriteWithFile:@"13nebo.jpg"];
+        bg1.position = ccp(size.width/2, 591);
+        [self addChild:bg1 z:0];
+
         CCSprite* bg = [CCSprite spriteWithFile:@"13Zabor_celiy.png"];
         bg.position = ccp(size.width/2, size.height/2);
-        [self addChild:bg z:0];
-        
+        [self addChild:bg z:5];
+
+        CCSprite* bg0 = [CCSprite spriteWithFile:@"13Zabor_dirka.png"];
+        bg0.position = ccp(size.width/2, size.height/2);
+        bg0.visible = NO;
+        [self addChild:bg0 z:5];
+
+        CCSprite* gr = [CCSprite spriteWithFile:@"13grass.png"];
+        gr.position = ccp(size.width/2, 69);
+        [self addChild:gr z:10];
+
 	}
 	return self;
 }
