@@ -55,32 +55,35 @@
 		house.position = ccp(houseX, houseY);
 		[self addChild:house z:5];
 
-        CCSprite* rabbit = [CCSprite spriteWithFile:@"12rabbit.png"];
-		rabbit.position = ccp(909, 114);
+        zayacX = 909;
+        zayacY = 114;
+        rabbit = [[CCSprite spriteWithFile:@"12rabbit.png"]retain];
+		rabbit.position = ccp(zayacX, zayacY);
 		[self addChild:rabbit z:15];
+       
+//        [rabbit runAction: [CCRepeatForever actionWithAction: [CCSequence actions:
+//                                                               
+//                                                               [CCFadeTo actionWithDuration:1.8f opacity:0.0f],
+//                                                               [CCFadeTo actionWithDuration:0.0001f opacity:255],
+//                                                               [CCDelayTime actionWithDuration:3.0f],
+//                                                               
+//                                                               nil]]];
 
         [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"12_01.aac" loop:YES];
 
-        [rabbit runAction: [CCRepeatForever actionWithAction: [CCSequence actions:
-                                                             
-                                                            [CCFadeTo actionWithDuration:1.8f opacity:0.0f],
-                                                               [CCFadeTo actionWithDuration:0.0001f opacity:255],
-                                                             [CCDelayTime actionWithDuration:3.0f],
-                                                             
-                                                             nil]]];
                                                                                                                                  
-        CCSprite* rabbit_eyes = [CCSprite spriteWithFile:@"12rabbit_eyes.png"];
-		rabbit_eyes.position = ccp(909, 114);
+        rabbit_eyes = [CCSprite spriteWithFile:@"12rabbit_eyes.png"];
+		rabbit_eyes.position = ccp(zayacX, zayacY);
         rabbit_eyes.opacity = 0;
 		[self addChild:rabbit_eyes z:16];
 
-       [rabbit_eyes runAction: [CCRepeatForever actionWithAction: [CCSequence actions:
-                                                               
-                                                               [CCFadeTo actionWithDuration:1.8f opacity:255.0f],
-                                                                   [CCFadeTo actionWithDuration:0.0001f opacity:0.0f],
-                                                               [CCDelayTime actionWithDuration:3.0f],
-                                                               
-                                                               nil]]];
+//       [rabbit_eyes runAction: [CCRepeatForever actionWithAction: [CCSequence actions:
+//                                                               
+//                                                               [CCFadeTo actionWithDuration:1.8f opacity:255.0f],
+//                                                                   [CCFadeTo actionWithDuration:0.0001f opacity:0.0f],
+//                                                               [CCDelayTime actionWithDuration:3.0f],
+//                                                               
+//                                                               nil]]];
 
 	
         anim1 = [[CCAnimation animation] retain];
@@ -212,6 +215,23 @@
 
 - (void) zayac {
     
+    [[SimpleAudioEngine sharedEngine] playEffect:@"Zajka.aac"];
+    [rabbit runAction: [CCSequence actions:
+                                                           
+                                                           [CCFadeTo actionWithDuration:1.8f opacity:0.0f],
+                                                           [CCFadeTo actionWithDuration:0.0001f opacity:255],
+                                                           [CCDelayTime actionWithDuration:3.0f],
+                                                           
+                                                           nil]];
+
+    [rabbit_eyes runAction:  [CCSequence actions:
+                                                                
+                                                                [CCFadeTo actionWithDuration:1.8f opacity:255.0f],
+                                                                [CCFadeTo actionWithDuration:0.0001f opacity:0.0f],
+                                                                [CCDelayTime actionWithDuration:3.0f],
+                                                                
+                                                                nil]];
+
 }
 
 - (void) ccTouchesBegan: (NSSet *)touches withEvent: (UIEvent *)event {
@@ -235,6 +255,11 @@
             
             [self dim];
         }
+        CGRect r3 = CGRectMake(zayacX - 100, zayacY - 100, 200, 200);
+        if(bAdd && CGRectContainsPoint(r3, location)) {
+            
+            [self zayac];
+        }
 
 	}
  
@@ -252,6 +277,8 @@
     [smoke release];
     [anim1 release];
     [anim2 release];
+    [rabbit release];
+    [rabbit_eyes release];
     
 	[super dealloc];
 }

@@ -14,6 +14,8 @@
     CCSprite* bull;
     CCSprite* house;
     CCSprite* smoke;
+    CCSprite* rabbit;
+    CCSprite* rabbit_eyes;
     float x, y, houseX, houseY, dimX, dimY, zayacX, zayacY;
     BOOL bBull;
     BOOL bLisa;
