@@ -90,6 +90,14 @@
 		DDB978C714CBCFC4002A7DB4 /* 13Zabor_celiy.png in Resources */ = {isa = PBXBuildFile; fileRef = DDB9787614CBCFC4002A7DB4 /* 13Zabor_celiy.png */; };
 		DDB978C814CBCFC4002A7DB4 /* 13Zabor_dirka.png in Resources */ = {isa = PBXBuildFile; fileRef = DDB9787714CBCFC4002A7DB4 /* 13Zabor_dirka.png */; };
 		DDB978CA14CBD040002A7DB4 /* TZ.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DDB978C914CBD040002A7DB4 /* TZ.pdf */; };
+		DDD8EA0414D611C20026E900 /* 12_01.aac in Resources */ = {isa = PBXBuildFile; fileRef = DDD8E9FC14D611C20026E900 /* 12_01.aac */; };
+		DDD8EA0514D611C20026E900 /* 12_01_VO1.aac in Resources */ = {isa = PBXBuildFile; fileRef = DDD8E9FD14D611C20026E900 /* 12_01_VO1.aac */; };
+		DDD8EA0614D611C20026E900 /* 12_01_VO2.aac in Resources */ = {isa = PBXBuildFile; fileRef = DDD8E9FE14D611C20026E900 /* 12_01_VO2.aac */; };
+		DDD8EA0714D611C20026E900 /* Dym_iz_truby.aac in Resources */ = {isa = PBXBuildFile; fileRef = DDD8E9FF14D611C20026E900 /* Dym_iz_truby.aac */; };
+		DDD8EA0814D611C20026E900 /* Lisa1.aac in Resources */ = {isa = PBXBuildFile; fileRef = DDD8EA0014D611C20026E900 /* Lisa1.aac */; };
+		DDD8EA0914D611C20026E900 /* Lubyanaya_izbushka.aac in Resources */ = {isa = PBXBuildFile; fileRef = DDD8EA0114D611C20026E900 /* Lubyanaya_izbushka.aac */; };
+		DDD8EA0A14D611C20026E900 /* ReadMe!!!.rtf in Resources */ = {isa = PBXBuildFile; fileRef = DDD8EA0214D611C20026E900 /* ReadMe!!!.rtf */; };
+		DDD8EA0B14D611C20026E900 /* Zajka.aac in Resources */ = {isa = PBXBuildFile; fileRef = DDD8EA0314D611C20026E900 /* Zajka.aac */; };
 		F27FB36C14C7E8C300799C7C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F27FB36B14C7E8C300799C7C /* QuartzCore.framework */; };
 		F27FB36E14C7E8C300799C7C /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F27FB36D14C7E8C300799C7C /* OpenGLES.framework */; };
 		F27FB37014C7E8C300799C7C /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F27FB36F14C7E8C300799C7C /* OpenAL.framework */; };
@@ -323,6 +331,14 @@
 		DDB9787614CBCFC4002A7DB4 /* 13Zabor_celiy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 13Zabor_celiy.png; sourceTree = "<group>"; };
 		DDB9787714CBCFC4002A7DB4 /* 13Zabor_dirka.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 13Zabor_dirka.png; sourceTree = "<group>"; };
 		DDB978C914CBD040002A7DB4 /* TZ.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = TZ.pdf; sourceTree = "<group>"; };
+		DDD8E9FC14D611C20026E900 /* 12_01.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = 12_01.aac; sourceTree = "<group>"; };
+		DDD8E9FD14D611C20026E900 /* 12_01_VO1.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = 12_01_VO1.aac; sourceTree = "<group>"; };
+		DDD8E9FE14D611C20026E900 /* 12_01_VO2.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = 12_01_VO2.aac; sourceTree = "<group>"; };
+		DDD8E9FF14D611C20026E900 /* Dym_iz_truby.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = Dym_iz_truby.aac; sourceTree = "<group>"; };
+		DDD8EA0014D611C20026E900 /* Lisa1.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lisa1.aac; sourceTree = "<group>"; };
+		DDD8EA0114D611C20026E900 /* Lubyanaya_izbushka.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lubyanaya_izbushka.aac; sourceTree = "<group>"; };
+		DDD8EA0214D611C20026E900 /* ReadMe!!!.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "ReadMe!!!.rtf"; sourceTree = "<group>"; };
+		DDD8EA0314D611C20026E900 /* Zajka.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = Zajka.aac; sourceTree = "<group>"; };
 		F27FB36714C7E8C300799C7C /* iStrory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iStrory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F27FB36B14C7E8C300799C7C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		F27FB36D14C7E8C300799C7C /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -634,6 +650,7 @@
 		DDB9782514CBCFC4002A7DB4 /* page12 */ = {
 			isa = PBXGroup;
 			children = (
+				DDD8E9FB14D611C20026E900 /* sound12 */,
 				DDB9782614CBCFC4002A7DB4 /* 12background12.jpg */,
 				DDB9782714CBCFC4002A7DB4 /* 12bull.png */,
 				DDB9782814CBCFC4002A7DB4 /* 12Holm.png */,
@@ -724,6 +741,21 @@
 				DDB9787714CBCFC4002A7DB4 /* 13Zabor_dirka.png */,
 			);
 			path = page13;
+			sourceTree = "<group>";
+		};
+		DDD8E9FB14D611C20026E900 /* sound12 */ = {
+			isa = PBXGroup;
+			children = (
+				DDD8E9FC14D611C20026E900 /* 12_01.aac */,
+				DDD8E9FD14D611C20026E900 /* 12_01_VO1.aac */,
+				DDD8E9FE14D611C20026E900 /* 12_01_VO2.aac */,
+				DDD8E9FF14D611C20026E900 /* Dym_iz_truby.aac */,
+				DDD8EA0014D611C20026E900 /* Lisa1.aac */,
+				DDD8EA0114D611C20026E900 /* Lubyanaya_izbushka.aac */,
+				DDD8EA0214D611C20026E900 /* ReadMe!!!.rtf */,
+				DDD8EA0314D611C20026E900 /* Zajka.aac */,
+			);
+			path = sound12;
 			sourceTree = "<group>";
 		};
 		F27FB35C14C7E8C200799C7C = {
@@ -1320,6 +1352,14 @@
 				DDB978C714CBCFC4002A7DB4 /* 13Zabor_celiy.png in Resources */,
 				DDB978C814CBCFC4002A7DB4 /* 13Zabor_dirka.png in Resources */,
 				DDB978CA14CBD040002A7DB4 /* TZ.pdf in Resources */,
+				DDD8EA0414D611C20026E900 /* 12_01.aac in Resources */,
+				DDD8EA0514D611C20026E900 /* 12_01_VO1.aac in Resources */,
+				DDD8EA0614D611C20026E900 /* 12_01_VO2.aac in Resources */,
+				DDD8EA0714D611C20026E900 /* Dym_iz_truby.aac in Resources */,
+				DDD8EA0814D611C20026E900 /* Lisa1.aac in Resources */,
+				DDD8EA0914D611C20026E900 /* Lubyanaya_izbushka.aac in Resources */,
+				DDD8EA0A14D611C20026E900 /* ReadMe!!!.rtf in Resources */,
+				DDD8EA0B14D611C20026E900 /* Zajka.aac in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

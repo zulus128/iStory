@@ -10,9 +10,24 @@
 #import "cocos2d.h"
 
 @interface Page12Layer : CCLayer {
-    
+ 
+    CCSprite* bull;
+    CCSprite* house;
+    CCSprite* smoke;
+    float x, y, houseX, houseY, dimX, dimY, zayacX, zayacY;
+    BOOL bBull;
+    BOOL bLisa;
+    BOOL bAdd;
+    CCAnimation* anim1;
+    CCAnimation* anim2;
 }
 
 +(CCScene *) scene;
+
+- (void) start;
+- (void) revet;
+- (void) lisa;
+- (void) dim;
+- (void) zayac;
 
 @end
